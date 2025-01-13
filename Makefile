@@ -13,4 +13,5 @@ all:
 #	$(CC) -v $(COMPILER_FLAGS) $(LINKER_FLAGS) $(INCLUDE_PATHS) $(LIBRARY_PATHS) $(SRC_FILES) -o test
 
 clean:
-	rm -f $(BUILD_DIR)/*
+	rm -rf $(BUILD_DIR)
+	mkdir -p $(BUILD_DIR)
