@@ -3,7 +3,7 @@ BUILD_DIR = build/debug
 CC = gcc
 SRC_FILES = $(wildcard $(SRC_DIR)/*.c)
 OBJ_NAME = play
-INCLUDE_PATHS = -F/Library/Frameworks
+INCLUDE_PATHS = -F/Library/Frameworks -I/Library/Frameworks/SDL2.framework/Headers -I/Library/Frameworks/SDL2_image.framework/Headers
 LIBRARY_PATHS = -F/Library/Frameworks
 COMPILER_FLAGS = -std=c11 -Wall -O0 -g
 LINKER_FLAGS = -framework SDL2 -framework SDL2_image -Wl,-rpath,/Library/Frameworks
